@@ -11,5 +11,3 @@ parser.add_option('-p', action='store', type='string', dest='passw')
 main = func.Anketa(options.username, options.passw)
 main.login()
 main.crunch_time()
-
-#test
