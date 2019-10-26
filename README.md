@@ -1,6 +1,8 @@
 ## Izitronika
 Za korištenje je potrebno instalirati python (upute navedene)
 
+Google Chrome
+
 Program ispunjava ankete sa "ne mogu procijeniti"
 
 ## Instalacija i korištenje
@@ -22,3 +24,7 @@ IZITRONIKA:
 4. copy-paste ili utipkati ```pip install selenium```, enter
 
 5. copy-paste ili utipkati ```python Izitronika.py -u "mojusername@tvz.hr" -p "mojasifra"```, enter
+
+
+AKO PROGRAM NE RADI:
+U Chrome upisati "chrome://settings/help" i napravit update na najnoviju verziju (26.10.2019., verzija treba biti 78)
