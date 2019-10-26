@@ -10,6 +10,7 @@ PYTHON:
 **Prilikom instalacije označiti kućicu "Add Python3 to PATH"**
 ![](OBAVEZNO%20PRILIKOM%20INSTALACIJE/ADD%20PYTHON%20TO%20PATH.png)
 
+
 IZITRONIKA:
 2. Na ovoj stranici kliknuti na zeleni "Clone or download" > "Download ZIP"
 
