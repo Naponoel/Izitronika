@@ -1,16 +1,14 @@
-# coding=utf-8
-import selenium
+from selenium.common.exceptions import NoSuchElementException as SelNoEl
 from selenium import webdriver
 from time import sleep
+import selenium
+import sys
 
 class Anketa():
     def __init__(self, username, passw):
         self.bot = webdriver.Chrome()
         self.username = username
         self.password = passw
-        self.ime_predmeta = 0
-        self.vjezbe = 0
-        self.oboje = 0
 
     def login(self):
         self.bot.get('https://moj.tvz.hr/')
@@ -21,34 +19,68 @@ class Anketa():
         sleep(2)
 
     def crunch_time(self):
-        while True:
+        try:
             ankete = self.bot.find_elements_by_xpath('//button[contains(text(), "Ispuni anketu")]')
             ankete[0].click()
             sleep(2)
+        except (SelNoEl, IndexError):
+            print('Anketa gotova')
+            sys.exit()
 
-            for _ in range (3):
+        while True:
+            pr = self.bot.find_elements_by_xpath('//button[contains(text(), "predavanja")]')
+            for _ in range (len(pr)):
                 try:
-                    pr = self.bot.find_elements_by_xpath('//button[contains(text(), "predavanja")]')
-                    for zx in pr:
-                        zx.click()
-                        sleep(1)
-                except:
-                    pass
-
-            for _ in range (3):
-                try:
-                    vj = self.bot.find_elements_by_xpath('//button[contains(text(), "vježbe")]')
-                    for yx in vj:
-                        yx.click()
-                        sleep(1)
+                    pr[_].click()
                     sleep(1)
                 except:
                     pass
 
-            inputi = self.bot.find_elements_by_xpath("//input[@value='0']")
-            for input in inputi:
-                input.click()
+            vj = self.bot.find_elements_by_xpath('//button[contains(text(), "vježbe")]')
+            for _ in range (len(vj)):
+                try:
+                    vj[_].click()
+                    sleep(1)
+                except:
+                    pass
+
+            nemrem = self.bot.find_elements_by_xpath("//input[@value='0']")
+            for _ in nemrem:
+                _.click()
 
             sleep(5)
             self.bot.find_element_by_xpath('/html/body/div[1]/div[2]/div/div/form/button[2]').click()
-            print('Loop done')
+            print('+1 done')
+
+
+        #  STARI NACIN
+        # while True:
+            # sleep(2)
+            # ankete = self.bot.find_elements_by_xpath('//button[contains(text(), "Ispuni anketu")]')
+            # ankete[0].click()
+            # sleep(2)
+        #     for _ in range (7):
+        #         try:
+        #             pr = self.bot.find_elements_by_xpath('//button[contains(text(), "predavanja")]')
+        #             for _ in pr:
+        #                 _.click()
+        #                 sleep(1)
+        #         except:
+        #             pass
+        #
+        #     for _ in range (7):
+        #         try:
+        #             vj = self.bot.find_elements_by_xpath('//button[contains(text(), "vježbe")]')
+        #             for _ in vj:
+        #                 _.click()
+        #                 sleep(1)
+        #         except:
+        #             pass
+        #
+        #     nemrem = self.bot.find_elements_by_xpath("//input[@value='0']")
+        #     for _ in nemrem:
+        #         _.click()
+        #
+        #     sleep(5)
+        #     self.bot.find_element_by_xpath('/html/body/div[1]/div[2]/div/div/form/button[2]').click()
+        #     print('+1 done')

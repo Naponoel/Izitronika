@@ -1,5 +1,5 @@
-import func
 from optparse import OptionParser
+import func
 
 parser = OptionParser()
 
