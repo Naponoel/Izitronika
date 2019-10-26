@@ -1,5 +1,6 @@
 ## Izitronika
 Za korištenje je potrebno instalirati python (upute navedene)
+
 Program ispunjava ankete sa "ne mogu procijeniti"
 
 ## Instalacija i korištenje
