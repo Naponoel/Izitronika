@@ -4,6 +4,7 @@ Program ispunjava ankete sa "ne mogu procijeniti"
 
 ## Instalacija i korištenje
 PYTHON:
+
 1. skrolati do dna [ove stranice](https://www.python.org/downloads/release/python-375/) i kliknuti na
 "Windows x86-64 executable installer"
 
@@ -12,6 +13,7 @@ PYTHON:
 
 
 IZITRONIKA:
+
 2. Na ovoj stranici kliknuti na zeleni "Clone or download" > "Download ZIP"
 
 3. Unzipat na Desktop, otvoriti folder "Izitronika", shift + desni klik > "Open PowerShell Window here"
