@@ -2,9 +2,9 @@
 Program ispunjava ankete sa "ne mogu procijeniti"
 
 ## Instalacija i korištenje
-1. kliknuti na "Clone or download" > "Download ZIP"
+1. kliknuti na zeleni "Clone or download" > "Download ZIP"
 
-2. instalirati najnoviju verziju Python-a sa: https://www.python.org/downloads/  
+2. skrolati do dna [stranice](https://www.python.org/downloads/release/python-375/) 
 **Prilikom instalacije označiti kućicu "Add Python3 to PATH"**
 
 3. Unzipat, otvoriti folder "Izitronika", shift + desni klik, "Open PowerShell Window here"
