@@ -27,4 +27,5 @@ IZITRONIKA:
 
 
 AKO PROGRAM NE RADI:
+
 U Chrome upisati "chrome://settings/help" i napravit update na najnoviju verziju (26.10.2019., verzija treba biti 78)
