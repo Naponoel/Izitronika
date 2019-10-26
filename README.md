@@ -8,7 +8,7 @@ Program ispunjava ankete sa "ne mogu procijeniti"
 "Windows x86-64 executable installer"
 
 **Prilikom instalacije označiti kućicu "Add Python3 to PATH"**
-![](OBAVEZNO PRILIKOM INSTALACIJE/ADD PYTHON TO PATH.png)
+![](OBAVEZNO%20PRILIKOM%20INSTALACIJE/ADD%20PYTHON%20TO%20PATH.png)
 
 3. Unzipat, otvoriti folder "Izitronika", shift + desni klik, "Open PowerShell Window here"
 
