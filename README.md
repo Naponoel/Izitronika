@@ -6,7 +6,9 @@ Program ispunjava ankete sa "ne mogu procijeniti"
 
 2. skrolati do dna [ove stranice](https://www.python.org/downloads/release/python-375/) i kliknuti na
 "Windows x86-64 executable installer"
+
 **Prilikom instalacije označiti kućicu "Add Python3 to PATH"**
+![](OBAVEZNO PRILIKOM INSTALACIJE/ADD PYTHON TO PATH.png)
 
 3. Unzipat, otvoriti folder "Izitronika", shift + desni klik, "Open PowerShell Window here"
 
