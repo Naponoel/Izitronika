@@ -26,6 +26,7 @@ IZITRONIKA:
 5. copy-paste ili utipkati ```python Izitronika.py -u "mojusername@tvz.hr" -p "mojasifra"```, enter
 
 
+
 AKO PROGRAM NE RADI:
 
 U Chrome upisati "chrome://settings/help" i napravit update na najnoviju verziju (verzija treba biti 78)
